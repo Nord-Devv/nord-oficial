@@ -58,7 +58,7 @@ export function Footer() {
           >
             <BsLinkedin className="social" />
           </LinkNext>
-          <LinkNext href="https://www.instagram.com/nord_devv/" target="true">
+          <LinkNext href="https://www.instagram.com/nord.devv/" target="true">
             <BsInstagram className="social" />
           </LinkNext>
           <LinkNext href="https://github.com/Nord-Devv" target="true">

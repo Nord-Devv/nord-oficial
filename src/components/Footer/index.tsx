@@ -3,9 +3,7 @@ import LinkNext from "next/link";
 
 import { Link } from "react-scroll";
 
-import { BsInstagram, BsLinkedin } from "react-icons/bs";
-import { BsGithub } from "react-icons/bs";
-import { BsWhatsapp } from "react-icons/bs";
+import { FaGithub, FaInstagram, FaLinkedin, FaWhatsapp } from "react-icons/fa";
 
 import logoFooter from "../../assets/logo-footer.png";
 import logoDesktop from "../../assets/logo.png";
@@ -36,7 +34,7 @@ export function Footer() {
                 Quem somos
               </Link>
             </li>
-        
+
             <li className="cursor-pointer text-white-400 links">
               <Link
                 to="inicio"
@@ -56,19 +54,19 @@ export function Footer() {
             href="https://www.linkedin.com/company/93205029/admin/feed/posts/"
             target="true"
           >
-            <BsLinkedin className="social" />
+            <FaLinkedin className="social" />
           </LinkNext>
           <LinkNext href="https://www.instagram.com/nord.devv/" target="true">
-            <BsInstagram className="social" />
+            <FaInstagram className="social" />
           </LinkNext>
           <LinkNext href="https://github.com/Nord-Devv" target="true">
-            <BsGithub className="social" />
+            <FaGithub className="social" />
           </LinkNext>
           <LinkNext
             href="https://api.whatsapp.com/send/?phone=5585992004530&text=Quero+ser+NORDDEV!&type=phone_number&app_absent=0"
             target="true"
           >
-            <BsWhatsapp className="social" />
+            <FaWhatsapp className="social" />
           </LinkNext>
         </div>
       </div>

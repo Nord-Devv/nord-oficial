@@ -1,8 +1,8 @@
 import React from 'react';
-import Image from 'next/image';
+import Image, { StaticImageData } from 'next/image';
 
 interface ImageAboutProps {
-  src: string;
+  src: StaticImageData;
   title: string;
   description: string;
   children?: React.ReactNode;

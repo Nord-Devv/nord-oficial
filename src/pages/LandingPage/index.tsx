@@ -1,15 +1,11 @@
 'use client'
 
-import devWeb from "../../assets/dev-web.svg";
-import design from "../../assets/design.svg";
-import hospedagem from "../../assets/hospedagem.svg";
-import socialMedia from "../../assets/social-media.svg";
 import Image from "next/image";
 
 import bgAboutMobile from "../../assets/bg-about-mobile.png";
 import imageAbout from "../../assets/bg-image-about.png";
 import bgAboutDesktop from "../../assets/bg-about-desktop.png";
-import imageAboutDesktop from "../../assets/image-about-desktop.png";
+import imageAboutDesktop from "../../assets/bannerr.png";
 import imgDesktop from "../../assets/home-desktop.png";
 import bgDesktop from "../../assets/Vector-5.png";
 import bgNotebook from "../../assets/Vector-3.png";
@@ -19,6 +15,13 @@ import { ImageServicesDefault } from "../../components/ImageServicesDefault";
 import { Header } from "../../components/Header";
 import { Footer } from "../../components/Footer";
 import { PartnerCompanies } from "@/components/PartnerCompanies";
+
+import design from "../../assets/design.png"
+import software from '../../assets/desenv.png'
+import suporte from "../../assets/support.png"
+import automocao from "../../assets/automacao_de_processos.png"
+import integracao from "../../assets/integracao.png"
+import manutencao from "../../assets/manutencao_sistemas.png"
 
 import Aos from 'aos';
 import 'aos/dist/aos.css';
@@ -47,7 +50,7 @@ export default function LandingPage() {
               Bem-vindos a <span className="text-yellow-500">Nord Dev</span>
             </h1>
             <p className="text-[1.3rem] tabletSM:text-[1.8rem] laptopSM:text-[1.8rem] tabletMD:text-[2.4rem] tabletLG:text-[1.6rem] laptopMD:text-[2rem] laptopLG:text-[2.1rem]">
-              Construindo o futuro da web, unindo inovação e excelência digital, impulsionando o amanhã.
+              Transformando ideias em soluções digitais que unem tecnologia e criatividade, moldando o futuro e impulsionando o amanhã com inovação e excelência.
             </p>
 
             <div className="pt-[2.4rem] flex justify-center items-center gap-[2rem] tabletMD:gap-[4.4rem] tabletLG:justify-start ">
@@ -74,7 +77,7 @@ export default function LandingPage() {
         />
       </section>
 
-      
+
       <section className="max-w-[2000px] relative flex flex-col tabletLG:flex-row tabletLG:justify-center laptopSM:mx-auto laptopSM:items-center overflow-hidden" id="quem-somos">
         <div className="h-[460px] flex items-center border-t-[1rem] border-yellow-500 w-full justify-center laptopSM:relative tabletLG:border-l-[1.3rem] tabletMD:h-[480px] tabletLG:border-t-0 tabletLG:h-[500px] laptopLG:h-[633px] tabletLG:max-w-full tabletLG:justify-normal"
           data-aos="fade-down"
@@ -106,10 +109,10 @@ export default function LandingPage() {
             </p>
 
             <p className="text-[1.4rem] tabletSM:text-[1.6rem] tabletMD:text-[1.6rem] tabletLG:text-[1.9rem] laptopMD:text-[2.1rem] laptopLG:text-[1.9rem]">
-              Somos uma empresa de tecnologia com foco em criação de sites, visando solucionar a presença digital dos nossos clientes com excelência.
+              A Nord Dev é sua parceira estratégica na criação de soluções digitais completas. Mais do que desenvolver tecnologia, nosso foco é resolver desafios de negócio com projetos de alta performance.
             </p>
             <p className="text-[1.4rem] tabletSM:text-[1.6rem] tabletMD:text-[1.6rem] tabletLG:text-[1.8rem]  laptopMD:text-[2.1rem] laptopLG:text-[1.9rem]">
-              Nossa equipe experiente combina criatividade e conhecimento técnico para desenvolver sites responsivos, intuitivos e visualmente atraentes, atendendo a empresa locais quanto a clientes de todo o país.
+              Combinamos criatividade, conhecimento técnico e visão de mercado para impulsionar a presença online e construir o futuro digital da sua empresa.
             </p>
           </div>
         </div>
@@ -132,7 +135,7 @@ export default function LandingPage() {
       <section className="w-full py-[2rem] flex justify-center">
         <PartnerCompanies />
       </section>
-      
+
       <section className="flex flex-col items-center justify-center my-[2.5rem] max-w-[1440px] mx-auto tabletSM:flex-wrap" id="servicos">
         <h1 className="before:bg-white before:w-[4.5rem] before:h-[1px] after:bg-white after:w-[4.5rem] after:h-[1px] flex justify-center items-center gap-[1.5rem] font-[200] text-[3.4rem] laptopSM:text-[5.9rem]">
           Nossos
@@ -142,36 +145,51 @@ export default function LandingPage() {
         <div className="flex flex-col items-center justify-center tabletSM:flex-wrap tabletSM:flex-row tabletSM:gap-[10%] pt-[4rem]">
 
           <ImageServicesDefault
+            src={software}
+            title="Desenvolvimento de Software"
+            description="Desenvolvemos soluções sob medida com sistemas robustos, seguros e intuitivos, conectando você aos seus clientes."
+          >
+          </ImageServicesDefault>
+
+
+          <ImageServicesDefault
             src={design}
-            title='Design'
-            description='Transformamos suas ideias em experiências visuais marcantes, criando designs inovadores e envolventes.'
+            title='Design UX/UI'
+            description='Transformamos ideias em experiências visuais marcantes, com interfaces modernas, intuitivas e envolventes.'
           >
           </ImageServicesDefault>
 
           <ImageServicesDefault
-            src={devWeb}
-            title="Web Development"
-            description="Desenvolvemos a espinha dorsal da sua presença online, com tecnologias atuais e funcionalidades robustas."
+            src={manutencao}
+            title="Manutenção de Sistemas"
+            description="Cuidamos da atualização, estabilidade e desempenho dos seus sistemas, garantindo um funcionamento eficiente."
           >
           </ImageServicesDefault>
 
           <ImageServicesDefault
-            src={hospedagem}
-            title="Hospedagem"
-            description="Oferecemos serviços de hospedagem confiáveis para manter seu site sempre disponível e eficiente."
+            src={automocao}
+            title="Automação de Processos"
+            description="Otimização e automação de fluxos de trabalho para aumentar a produtividade e reduzir erros operacionais."
           >
           </ImageServicesDefault>
 
           <ImageServicesDefault
-            src={socialMedia}
-            title="Social Media"
-            description="Potencializamos sua marca nas redes sociais, criando estratégias envolventes para impulsionar sua presença online."
+            src={integracao}
+            title="Integração de Sistemas"
+            description="Conectamos diferentes plataformas e sistemas para que sua empresa funcione de forma integrada e inteligente."
+          >
+          </ImageServicesDefault>
+
+          <ImageServicesDefault
+            src={suporte}
+            title="Suporte Técnico"
+            description="Atendimento ágil e especializado para resolver problemas e manter suas operações em pleno funcionamento."
           >
           </ImageServicesDefault>
 
         </div>
       </section>
-     
+
       <section className="flex items-center justify-center relative w-full bg-bg-request bg-cover bg-no-repeat bg-center">
         <div className="text-center px-[3.5rem] py-[100px] max-w-[1330px] flex flex-col items-center justify-center">
           <h3 className="before:bg-white before:w-[3rem] before:h-[1px] after:bg-white after:w-[3rem] after:h-[1px] flex justify-center items-center gap-[1.5rem] text-[1.3rem] mb-[2rem] font-[300] tabletSM:text-[2rem] tabletMD:text-[2.5rem] laptopLG:text-[4rem]" data-aos="fade-down" data-aos-duration="1000">Vamos solicitar o seu orçamento</h3>

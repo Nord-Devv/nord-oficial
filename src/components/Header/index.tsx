@@ -20,7 +20,7 @@ export function Header() {
           />
         </LinkNext>
 
-        <nav className="max-w-full px-[1.4rem]">
+            <nav className="max-w-full px-[1.4rem]">
           <ul className="text-white-400 flex items-center justify-between text-[1.3rem] tabletSM:text-[1.8rem] tabletLG:gap-[6rem]">
             <li >
               <Link

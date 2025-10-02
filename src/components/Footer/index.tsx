@@ -5,25 +5,25 @@ import { Link } from "react-scroll";
 
 import { FaGithub, FaInstagram, FaLinkedin, FaWhatsapp } from "react-icons/fa";
 
-import logoFooter from "../../assets/logo-footer.png";
-import logoDesktop from "../../assets/logo.png";
+import logoFooter from "../../assets/images/logo-footer.png";
+import logoDesktop from "../../assets/images/logo.png";
 
 export function Footer() {
   return (
     <footer className="bg-bg-secundary py-[5rem] tabletMD:py-[10rem]">
-      <div className="max-w-[1440px] mx-auto pl-[4.2rem] flex flex-col tabletMD:flex-row tabletMD:items-center tabletMD:justify-between tabletMD:px-[2rem] laptopSM:px-[10rem]">
+      <div className="mx-auto flex max-w-[1440px] flex-col pl-[4.2rem] tabletMD:flex-row tabletMD:items-center tabletMD:justify-between tabletMD:px-[2rem] laptopSM:px-[10rem]">
         <LinkNext
           href="#"
-          className="mb-[3rem] tabletMD:mb-0 laptopLG:hidden laptopLG:absolute"
+          className="mb-[3rem] tabletMD:mb-0 laptopLG:absolute laptopLG:hidden"
         >
           <Image src={logoFooter} alt="logo" />
         </LinkNext>
-        <LinkNext href="#" className="hidden laptopLG:block w-[342px]">
+        <LinkNext href="#" className="hidden w-[342px] laptopLG:block">
           <Image src={logoDesktop} alt="" />
         </LinkNext>
         <nav>
-          <ul className="text-[1.8rem] font-[600] leading-[3.3rem] flex flex-col justify-around gap-[1.6rem] tabletMD:flex-row tabletMD:gap-[3.5rem] laptopSM:gap-[5rem]">
-            <li className="cursor-pointer text-white-400 links">
+          <ul className="flex flex-col justify-around gap-[1.6rem] text-[1.8rem] font-[600] leading-[3.3rem] tabletMD:flex-row tabletMD:gap-[3.5rem] laptopSM:gap-[5rem]">
+            <li className="links cursor-pointer text-white-400">
               <Link
                 to="quem-somos"
                 spy={true}
@@ -35,7 +35,7 @@ export function Footer() {
               </Link>
             </li>
 
-            <li className="cursor-pointer text-white-400 links">
+            <li className="links cursor-pointer text-white-400">
               <Link
                 to="inicio"
                 spy={true}
@@ -49,7 +49,7 @@ export function Footer() {
           </ul>
         </nav>
 
-        <div className="flex gap-[2.1rem] mt-[5rem] tabletMD:mt-0 tabletMD:gap-[1.5rem]">
+        <div className="mt-[5rem] flex gap-[2.1rem] tabletMD:mt-0 tabletMD:gap-[1.5rem]">
           <LinkNext
             href="https://www.linkedin.com/company/93205029/admin/feed/posts/"
             target="true"

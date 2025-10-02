@@ -2,22 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
-
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-a{
-  text-decoration: none; 
+a {
+  text-decoration: none;
 }
 
-ul{
+ul {
   list-style: none;
 }
 
-html{
+html {
   scroll-behavior: smooth;
   font-size: 62.5%;
 }
@@ -31,81 +30,81 @@ body {
 }
 
 .slick-slide {
-  @apply w-[190px] flex justify-items-center items-center; 
+  @apply flex w-[190px] items-center justify-items-center;
 }
 
-@layer components{
-  .social{
-    @apply text-[3.2rem] text-yellow-500  hover:text-yellow-800 hover:scale-110 transition-all
-  }
-}
-
-@layer components{
-  .service{
-    @apply flex flex-col items-center max-w-[320px] text-center mb-[5rem] laptopSM:max-w-[350px] laptopLG:max-w-[370px]
-  }
-
-  .img-service{
-    @apply max-w-[133px] mb-[2rem] laptopSM:max-w-[140px]
-  }
-
-  .title{
-    @apply text-[2.2rem] font-[600] mb-[1rem] laptopSM:text-[2.4rem]
-  }
-
-  .description{
-    @apply text-[1.5rem] laptopSM:text-[1.7rem]
+@layer components {
+  .social {
+    @apply text-[3.2rem] text-yellow-500 transition-all hover:scale-110 hover:text-yellow-800;
   }
 }
 
-@layer components{
- .text-key{
-  @apply text-yellow-500
- }
-
- .img-teams{
-  @apply w-[50%] h-[50%] relative tabletMD:w-[33.33%] tabletMD:h-[33.33%] laptopSM:w-[25%] laptopSM:h-[25%]
- }
-
- .name{
-  @apply text-[1.6rem] tabletSM:text-[2.3rem] laptopLG:text-[2.6rem] laptopLG:font-bold
- }
-
- .office{
-  @apply text-[1.2rem] tabletSM:text-[1.5rem] laptopLG:text-[1.8rem]
- }
-}
-
-@layer components{
-  .active{
-    @apply  py-[1.3rem] text-[1.7rem] transition-all laptopSM:py-[42px] border-b-yellow-500 border-b-4 text-yellow-500
+@layer components {
+  .service {
+    @apply mb-[5rem] flex max-w-[340px] flex-col items-center text-center tabletSM:max-w-[340px] tabletMD:max-w-[340px] tabletLG:max-w-[380px] laptopSM:max-w-[380px] laptopLG:max-w-[370px];
   }
 
-  .links{
-    @apply hover:text-white transition-all text-[1.7rem] cursor-pointer
+  .img-service {
+    @apply mb-[2rem] max-w-[133px] laptopSM:max-w-[140px];
+  }
+
+  .title {
+    @apply mb-[1rem] text-[2.2rem] font-[600] laptopSM:text-[2.4rem];
+  }
+
+  .description {
+    @apply text-[1.5rem] laptopSM:text-[1.7rem];
+  }
+}
+
+@layer components {
+  .text-key {
+    @apply text-yellow-500;
+  }
+
+  .img-teams {
+    @apply relative h-[50%] w-[50%] tabletMD:h-[33.33%] tabletMD:w-[33.33%] laptopSM:h-[25%] laptopSM:w-[25%];
+  }
+
+  .name {
+    @apply text-[1.6rem] tabletSM:text-[2.3rem] laptopLG:text-[2.6rem] laptopLG:font-bold;
+  }
+
+  .office {
+    @apply text-[1.2rem] tabletSM:text-[1.5rem] laptopLG:text-[1.8rem];
+  }
+}
+
+@layer components {
+  .active {
+    @apply border-b-4 border-b-yellow-500 py-[1.3rem] text-[1.7rem] text-yellow-500 transition-all laptopSM:py-[42px];
+  }
+
+  .links {
+    @apply cursor-pointer text-[1.7rem] transition-all hover:text-white;
   }
 }
 
 .swiper {
-  @apply !flex !flex-col justify-center items-center !max-w-full !mt-[4rem] !overflow-hidden !gap-[2rem]
+  @apply !mt-[4rem] !flex !max-w-full !flex-col items-center justify-center !gap-[2rem] !overflow-hidden;
 }
 
 .swiper-wrapper {
   transition-timing-function: linear !important;
 }
-  
-.swiper-pagination{
-  @apply bottom-0
+
+.swiper-pagination {
+  @apply bottom-0;
 }
 
-.swiper-pagination-bullet{
+.swiper-pagination-bullet {
   @apply !bg-white !opacity-100;
 }
 
-.swiper-pagination{
-  @apply !relative
+.swiper-pagination {
+  @apply !relative;
 }
-  
+
 .swiper-pagination-bullet-active {
   @apply !bg-yellow-500;
 }

@@ -1,36 +1,55 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Nord Dev Site
 
-## Getting Started
+Este é o site oficial da Nord Dev, desenvolvido com Next.js.
 
-First, run the development server:
+## 🚀 Começando
 
-```bash
+Para obter uma cópia local e executá-la, siga estes passos.
+
+### Pré-requisitos
+
+Certifique-se de ter o Node.js e o npm instalados em sua máquina.
+
+*   npm
+    ```sh
+    npm install npm@latest -g
+    ```
+
+### Instalação
+
+1.  Clone o repositório
+    ```sh
+    git clone <URL_DO_REPOSITORIO>
+    ```
+2.  Instale os pacotes NPM
+    ```sh
+    npm install
+    ```
+
+### Executando a Aplicação
+
+Para executar o aplicativo em modo de desenvolvimento, use:
+
+```sh
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Abra [http://localhost:3000](http://localhost:3000) para visualizá-lo no navegador. A página será recarregada automaticamente se você fizer edições.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📜 Scripts Disponíveis
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+No diretório do projeto, você pode executar:
 
-## Learn More
+*   `npm run dev`: Executa o aplicativo no modo de desenvolvimento.
+*   `npm run build`: Compila o aplicativo para produção na pasta `.next`.
+*   `npm run start`: Inicia um servidor de produção Next.js.
+*   `npm run lint`: Executa o linter integrado do Next.js.
+*   `npm run format`: Formata o código usando o Prettier.
 
-To learn more about Next.js, take a look at the following resources:
+## 🛠️ Tecnologias Utilizadas
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+*   [Next.js](https://nextjs.org/) - O Framework React para Produção
+*   [React](https://reactjs.org/) - Uma biblioteca JavaScript para construir interfaces de usuário
+*   [TypeScript](https://www.typescriptlang.org/) - Um superconjunto tipado de JavaScript
+*   [Tailwind CSS](https://tailwindcss.com/) - Um framework CSS utility-first
+*   [AOS](https://michalsnik.github.io/aos/) - Biblioteca para Animação ao Rolar (Animate On Scroll)

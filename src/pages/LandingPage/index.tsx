@@ -9,6 +9,7 @@ import imageAboutResponsive from "../../assets/images/banner-responsive.png"
 import imgDesktop from "../../assets/images/home-desktop.png";
 import bgDesktop from "../../assets/images/Vector-5.png";
 import bgNotebook from "../../assets/images/Vector-3.png";
+import gifAbout from "../../assets/images/bg-planet.png"
 
 import { ButtonDefault } from "../../components/ButtonDefault";
 import { ImageServicesDefault } from "../../components/ImageServicesDefault";
@@ -146,14 +147,14 @@ export default function LandingPage() {
 
         <Image
           className="relative top-[-90px] -z-20 block w-full tabletMD:top-[-100px] tabletLG:hidden laptopSM:top-[-130px]"
-          src={imageAboutResponsive}
+          src={gifAbout}
           alt=""
           data-aos="fade-up"
           data-aos-duration="1000"
         />
         <Image
-          className="absolute right-0 -z-10 hidden h-[550px] max-w-[1200px] object-cover tabletLG:block tabletLG:w-[60%] laptopLG:h-[633px] laptopLG:w-[60%]"
-          src={imageAbout}
+          className="absolute right-0 -z-10 hidden h-[550px] max-w-[1200px] tabletLG:block tabletLG:w-[60%] laptopLG:h-[633px] laptopLG:w-[60%] object-cover"
+          src={gifAbout}
           alt=""
           data-aos="fade-left"
           data-aos-duration="1000"

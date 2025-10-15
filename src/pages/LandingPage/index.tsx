@@ -5,6 +5,7 @@ import Image from "next/image";
 import bgAboutMobile from "../../assets/images/bg-about-mobile.png";
 import bgAboutDesktop from "../../assets/images/bg-about-desktop.png";
 import imageAbout from "../../assets/images/banner-new.png";
+import imageAboutResponsive from "../../assets/images/banner-responsive.png"
 import imgDesktop from "../../assets/images/home-desktop.png";
 import bgDesktop from "../../assets/images/Vector-5.png";
 import bgNotebook from "../../assets/images/Vector-3.png";
@@ -145,7 +146,7 @@ export default function LandingPage() {
 
         <Image
           className="relative top-[-90px] -z-20 block w-full tabletMD:top-[-100px] tabletLG:hidden laptopSM:top-[-130px]"
-          src={imageAbout}
+          src={imageAboutResponsive}
           alt=""
           data-aos="fade-up"
           data-aos-duration="1000"

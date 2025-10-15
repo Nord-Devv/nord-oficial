@@ -12,15 +12,26 @@ export function Footer() {
   return (
     <footer className="bg-bg-secundary py-[5rem] tabletMD:py-[10rem]">
       <div className="mx-auto flex max-w-[1440px] flex-col pl-[4.2rem] tabletMD:flex-row tabletMD:items-center tabletMD:justify-between tabletMD:px-[2rem] laptopSM:px-[10rem]">
-        <LinkNext
-          href="#"
-          className="mb-[3rem] tabletMD:mb-0 laptopLG:absolute laptopLG:hidden"
+        <Link
+          to="inicio"
+          spy={true}
+          duration={100}
+          smooth={true}
+          offset={-240}
+          className="mb-[3rem] cursor-pointer tabletMD:mb-0 laptopLG:absolute laptopLG:hidden"
         >
           <Image src={logoFooter} alt="logo" />
-        </LinkNext>
-        <LinkNext href="#" className="hidden w-[342px] laptopLG:block">
+        </Link>
+        <Link
+          to="inicio"
+          spy={true}
+          duration={100}
+          smooth={true}
+          offset={-240}
+          className="hidden w-[342px] cursor-pointer laptopLG:block"
+        >
           <Image src={logoDesktop} alt="" />
-        </LinkNext>
+        </Link>
         <nav>
           <ul className="flex flex-col justify-around gap-[1.6rem] text-[1.8rem] font-[600] leading-[3.3rem] tabletMD:flex-row tabletMD:gap-[3.5rem] laptopSM:gap-[5rem]">
             <li className="links cursor-pointer text-white-400">
@@ -41,7 +52,7 @@ export function Footer() {
                 spy={true}
                 duration={100}
                 smooth={true}
-                offset={-240}
+                offset={-200}
               >
                 Serviços
               </Link>

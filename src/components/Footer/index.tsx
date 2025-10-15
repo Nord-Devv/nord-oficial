@@ -37,6 +37,18 @@ export function Footer() {
 
             <li className="links cursor-pointer text-white-400">
               <Link
+                to="servicos"
+                spy={true}
+                duration={100}
+                smooth={true}
+                offset={-240}
+              >
+                Serviços
+              </Link>
+            </li>
+
+            <li className="links cursor-pointer text-white-400">
+              <Link
                 to="inicio"
                 spy={true}
                 duration={100}

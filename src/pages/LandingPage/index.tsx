@@ -24,10 +24,26 @@ import manutencao from "../../assets/images/manutencao_sistemas.png";
 
 import Aos from "aos";
 import "aos/dist/aos.css";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
+
 export default function LandingPage() {
+  const [aboutAosAnimation, setAboutAosAnimation] = useState("fade-down");
+
   useEffect(() => {
     Aos.init();
+
+    const handleResize = () => {
+      if (window.innerWidth >= 950) {
+        setAboutAosAnimation("fade-right");
+      } else {
+        setAboutAosAnimation("fade-down");
+      }
+    };
+
+    window.addEventListener("resize", handleResize);
+    handleResize(); // Set initial value
+
+    return () => window.removeEventListener("resize", handleResize);
   }, []);
 
   return (
@@ -87,7 +103,7 @@ export default function LandingPage() {
       >
         <div
           className="relative flex h-[460px] w-full items-center justify-center border-t-[1rem] border-yellow-500 tabletMD:h-[480px] tabletLG:h-[550px] tabletLG:w-[60%] tabletLG:justify-start tabletLG:border-l-[1.3rem] tabletLG:border-t-0 laptopSM:relative laptopLG:h-[633px] laptopLG:w-[60%]"
-          data-aos="fade-down"
+          data-aos={aboutAosAnimation}
           data-aos-duration="1000"
         >
           <Image
@@ -99,7 +115,6 @@ export default function LandingPage() {
             className="absolute hidden h-full tabletLG:block"
             src={bgAboutDesktop}
             alt=""
-            data-aos="fade-right"
             data-aos-duration="1000"
           />
 
@@ -200,7 +215,8 @@ export default function LandingPage() {
       </section>
 
       <section className="relative flex w-full items-center justify-center bg-bg-request bg-cover bg-center bg-no-repeat">
-        <div className="flex max-w-[1330px] flex-col items-center justify-center px-[3.5rem] py-[100px] text-center">
+        <div className="absolute inset-0 bg-black/75"></div>
+        <div className="relative flex max-w-[1330px] flex-col items-center justify-center px-[3.5rem] py-[100px] text-center">
           <h3
             className="mb-[2rem] flex items-center justify-center gap-[1.5rem] text-[1.3rem] font-[300] before:h-[1px] before:w-[3rem] before:bg-white after:h-[1px] after:w-[3rem] after:bg-white tabletSM:text-[2rem] tabletMD:text-[2.5rem] laptopLG:text-[4rem]"
             data-aos="fade-down"

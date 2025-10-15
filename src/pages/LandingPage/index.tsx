@@ -9,7 +9,7 @@ import imageAboutResponsive from "../../assets/images/banner-responsive.png"
 import imgDesktop from "../../assets/images/home-desktop.png";
 import bgDesktop from "../../assets/images/Vector-5.png";
 import bgNotebook from "../../assets/images/Vector-3.png";
-import gifAbout from "../../assets/images/planet-gif.gif"
+import gifAbout from "../../assets/images/bg-planet.png"
 
 import { ButtonDefault } from "../../components/ButtonDefault";
 import { ImageServicesDefault } from "../../components/ImageServicesDefault";

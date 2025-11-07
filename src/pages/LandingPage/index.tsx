@@ -1,27 +1,23 @@
 "use client";
 
 import Image from "next/image";
-
 import bgAboutMobile from "../../assets/images/bg-about-mobile.png";
 import bgAboutDesktop from "../../assets/images/bg-about-desktop.png";
 import imgDesktop from "../../assets/images/home-desktop.png";
 import bgDesktop from "../../assets/images/Vector-5.png";
 import bgNotebook from "../../assets/images/Vector-3.png";
 import gifAbout from "../../assets/images/bg-planet.png"
-
 import { ButtonDefault } from "../../components/ButtonDefault";
 import { ImageServicesDefault } from "../../components/ImageServicesDefault";
 import { Header } from "../../components/Header";
 import { Footer } from "../../components/Footer";
 import { PartnerCompanies } from "@/components/PartnerCompanies";
-
 import design from "../../assets/images/design.png";
 import software from "../../assets/images/desenv.png";
 import suporte from "../../assets/images/support.png";
 import automocao from "../../assets/images/automacao_de_processos.png";
 import integracao from "../../assets/images/integracao.png";
 import manutencao from "../../assets/images/manutencao_sistemas.png";
-
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { useEffect, useState } from "react";

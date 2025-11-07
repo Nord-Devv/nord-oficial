@@ -2,35 +2,13 @@
 
 import React from "react";
 import Image from "next/image";
-
-import enterpriseOne from "../../assets/images/enterpriseOne.svg";
-import enterpriseTwo from "../../assets/images/enterpriseTwo.svg";
-import enterpriseThree from "../../assets/images/enterpriseThree.svg";
-import enterpriseFour from "../../assets/images/enterpriseFour.svg";
-import enterpriseFive from "../../assets/images/enterpriseFive.svg";
-import enterpriseSix from "../../assets/images/enterpriseSix.svg";
-
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
-
 import "swiper/css";
+import { companiesSlider } from "@/assets/images/companies";
 
 export const PartnerCompanies: React.FC = () => {
-  const companiesSlider = [
-    enterpriseOne,
-    enterpriseTwo,
-    enterpriseThree,
-    enterpriseFour,
-    enterpriseFive,
-    enterpriseSix,
-    enterpriseOne,
-    enterpriseTwo,
-    enterpriseThree,
-    enterpriseFour,
-    enterpriseFive,
-    enterpriseSix,
-  ];
-
+  
   return (
     <section className="my-[3rem] flex w-full items-center justify-center py-[2rem] text-center mobileSM:mt-[-100px] tabletLG:mt-[0px]">
       <Swiper

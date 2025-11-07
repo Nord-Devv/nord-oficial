@@ -4,8 +4,6 @@ import Image from "next/image";
 
 import bgAboutMobile from "../../assets/images/bg-about-mobile.png";
 import bgAboutDesktop from "../../assets/images/bg-about-desktop.png";
-import imageAbout from "../../assets/images/banner-new.png";
-import imageAboutResponsive from "../../assets/images/banner-responsive.png"
 import imgDesktop from "../../assets/images/home-desktop.png";
 import bgDesktop from "../../assets/images/Vector-5.png";
 import bgNotebook from "../../assets/images/Vector-3.png";

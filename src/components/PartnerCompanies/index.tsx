@@ -8,7 +8,6 @@ import "swiper/css";
 import { companiesSlider } from "@/assets/images/companies";
 
 export const PartnerCompanies: React.FC = () => {
-  
   return (
     <section className="my-[3rem] flex w-full items-center justify-center py-[2rem] text-center mobileSM:mt-[-100px] tabletLG:mt-[0px]">
       <Swiper
@@ -39,7 +38,7 @@ export const PartnerCompanies: React.FC = () => {
             <Image
               src={empresa}
               alt="Empresa Parceira"
-              className="object-contain mobileSM:h-[70px] mobileSM:w-[70px] tabletSM:h-[60px] tabletSM:w-[60px] tabletMD:h-[75px] tabletMD:w-[75px] tabletLG:h-[80px] tabletLG:w-[80px] laptopLG:h-[100px] laptopLG:w-[100px]"
+              className={`object-contain mobileSM:h-[70px] mobileSM:w-[70px] tabletSM:h-[60px] tabletSM:w-[60px] tabletMD:h-[75px] tabletMD:w-[75px] tabletLG:h-[80px] tabletLG:w-[80px] laptopLG:h-[100px] laptopLG:w-[100px]`}
             />
           </SwiperSlide>
         ))}
